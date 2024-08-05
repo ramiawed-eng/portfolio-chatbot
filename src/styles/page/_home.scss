@@ -1,0 +1,36 @@
+.section {
+  &-header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("/images/background-dot.png"),
+      linear-gradient(
+        0deg,
+        rgba($color--white, 1),
+        rgba($color--background-primary, 1)
+      );
+    perspective: 1000;
+    background-position: 0 0, 0 0;
+    background-size: 20px, auto;
+
+    &-wrapper {
+      width: 60%;
+      text-align: center;
+
+      @include respond(tab-port) {
+        width: 80%;
+      }
+
+      @include respond(phone) {
+        width: 90%;
+      }
+    }
+
+    &-links {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}

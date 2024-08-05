@@ -1,0 +1,18 @@
+.button {
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  border-radius: 8px;
+}
+.button-primary {
+  background-color: $color--button-primary;
+  color: $color--white;
+
+  &:hover {
+    background-color: lighten($color: $color--button-primary, $amount: 10%);
+  }
+}
+
+.button-secondary {
+  color: $color--button-primary;
+  border: 1px solid $color--button-primary;
+}

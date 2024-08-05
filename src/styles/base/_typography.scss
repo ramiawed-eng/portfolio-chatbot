@@ -1,0 +1,26 @@
+.heading-primary {
+  color: $color--primary;
+  font-size: 5.5rem;
+  font-weight: 700;
+
+  @include respond(tab-port) {
+    font-size: 4.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
+}
+
+.paragraph-primary {
+  color: $color--paragraph;
+  font-size: 2rem;
+
+  @include respond(tab-port) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+  }
+}

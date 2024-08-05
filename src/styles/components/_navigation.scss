@@ -1,0 +1,212 @@
+.navigation-container {
+  background-color: $color--nav;
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  border: 1px solid rgba($color--border-primary, 1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  gap: 3rem;
+
+  & .navigation-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color--link;
+    transition: all 0.2s linear;
+    &:hover {
+      color: lighten($color: $color--link, $amount: 30%);
+    }
+
+    &:last-child {
+      background-color: $color--button-primary;
+      color: $color--white;
+      border-radius: 8px;
+      padding: 1rem 2rem;
+      &:hover {
+        background-color: lighten($color: $color--link, $amount: 10%);
+      }
+    }
+  }
+
+  & .navigation-img-link {
+    width: 150px !important;
+    height: 30px;
+    position: relative;
+  }
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.navigation-menu-wrapper {
+  background-color: $color--nav;
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba($color--border-primary, 1);
+  z-index: 10;
+  display: none;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+
+  .navigation-menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    gap: 3rem;
+
+    &-right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+
+      & .navigation-link {
+        background-color: $color--button-primary;
+        color: $color--white !important;
+        border-radius: 8px;
+        padding: 1rem 2rem;
+
+        &:hover {
+          background-color: lighten($color: $color--link, $amount: 10%);
+        }
+
+        @include respond(phone) {
+          display: none;
+        }
+      }
+    }
+
+    & .menu-humburger {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+
+      & .menu-humburger-line {
+        background-color: $color--link;
+        width: 60%;
+        height: 2px;
+        border-radius: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.2s linear;
+
+        &-1 {
+          top: 30%;
+          transform: translate(-50%, -50%) rotate(0);
+          &-show {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(137deg);
+          }
+        }
+
+        &-2 {
+          display: block;
+
+          &-show {
+            display: none;
+          }
+        }
+
+        &-3 {
+          top: 70%;
+          transform: translate(-50%, -50%) rotate(0);
+          &-show {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(37deg);
+          }
+        }
+      }
+    }
+
+    & .navigation-link {
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $color--link;
+      transition: all 0.2s linear;
+      &:hover {
+        color: lighten($color: $color--link, $amount: 30%);
+      }
+
+      &:last-child {
+        background-color: $color--button-primary;
+        color: $color--white;
+        border-radius: 8px;
+        padding: 1rem 2rem;
+
+        &:hover {
+          background-color: lighten($color: $color--link, $amount: 10%);
+        }
+      }
+    }
+
+    & .navigation-img-link {
+      width: 150px !important;
+      height: 30px;
+      position: relative;
+    }
+  }
+
+  .menu {
+    border-top: 1px solid rgba($color--border-primary, 1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 2rem;
+    max-height: 0;
+    transition: all 0.3s linear;
+    overflow: hidden;
+
+    &.show {
+      max-height: 300px;
+      padding: 2rem;
+    }
+
+    & .navigation-link {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $color--link;
+      transition: all 0.2s linear;
+      &:hover {
+        color: lighten($color: $color--link, $amount: 30%);
+      }
+
+      &:last-child {
+        background-color: $color--button-primary;
+        color: $color--white;
+        border-radius: 8px;
+        padding: 1rem 2rem;
+        display: none;
+        &:hover {
+          background-color: lighten($color: $color--link, $amount: 10%);
+        }
+
+        @include respond(phone) {
+          display: block;
+        }
+      }
+    }
+  }
+}
