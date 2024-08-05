@@ -14,12 +14,15 @@
     perspective: 1000;
     background-position: 0 0, 0 0;
     background-size: 20px, auto;
+    position: relative;
 
     &-wrapper {
-      width: 60%;
+      transform: translateY(-50px);
+      width: 70%;
       text-align: center;
 
       @include respond(tab-port) {
+        transform: translateY(0);
         width: 80%;
       }
 
@@ -29,8 +32,54 @@
     }
 
     &-links {
+      transform: translateY(-50px);
       display: flex;
       gap: 2rem;
+
+      @include respond(tab-port) {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &-logos {
+    padding: 10rem 10rem;
+
+    @include respond(tab-port) {
+      padding: 5rem 5rem;
+    }
+
+    @include respond(tab-port) {
+      padding: 5rem 2rem;
+    }
+
+    &-header {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 5rem;
+
+      @include respond(tab-port) {
+        width: 80%;
+      }
+
+      @include respond(tab-port) {
+        width: 90%;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 5rem;
+      justify-content: center;
+
+      & .logo {
+        width: 120px;
+        height: 50px;
+        position: relative;
+      }
     }
   }
 }
