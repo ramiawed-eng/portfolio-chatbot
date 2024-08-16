@@ -1,3 +1,4 @@
+import BlogsSection from "@/components/sections/blogs";
 import FeaturesSection from "@/components/sections/features";
 import HeaderSection from "@/components/sections/header";
 import ImageWithContentSection from "@/components/sections/image-with-content";
@@ -14,6 +15,7 @@ export default function Home() {
       <FeaturesSection />
       <PricingSection />
       <ReviewsSection />
+      <BlogsSection />
     </>
   );
 }

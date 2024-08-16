@@ -5,6 +5,7 @@ import HeadingSecondary from "../typography/heading-secondary";
 import ParagraphPrimary from "../typography/paragraph-primary";
 import PricingCard from "../cards/pricing-card";
 import { useState } from "react";
+import SectionHeader from "../typography/section-header";
 
 export default function PricingSection() {
   const [monthly, setMonthly] = useState(true);
@@ -15,10 +16,14 @@ export default function PricingSection() {
 
   return (
     <div className="section-pricing section">
-      <div className="section-pricing-header">
-        <HeadingSecondary title="Pricing plan" />
+      <SectionHeader
+        title="Pricing plan"
+        subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      />
+      {/* <div className="section-pricing-header">
+        <HeadingSecondary title="" />
         <ParagraphPrimary text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
-      </div>
+      </div> */}
 
       <div className="section-pricing-switcher">
         <div className={`${monthly ? "selected" : ""}`} onClick={toggleMonthly}>

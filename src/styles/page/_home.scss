@@ -152,11 +152,7 @@
     }
 
     &-content {
-      // display: flex;
-      // flex-direction: row;
-      // flex-wrap: wrap;
-      // justify-content: center;
-      // gap: 3rem;
+      padding-top: 5rem;
       column-count: 3;
       column-gap: 2rem;
 
@@ -167,6 +163,17 @@
       @include respond(phone) {
         column-count: 1;
       }
+    }
+  }
+
+  &-blogs {
+    &-content {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
     }
   }
 }

@@ -29,3 +29,10 @@ export type Review = {
   job: string;
   imageUrl: string;
 };
+
+export type Blog = {
+  imageUrl: string;
+  type: string;
+  header: string;
+  content: string;
+};

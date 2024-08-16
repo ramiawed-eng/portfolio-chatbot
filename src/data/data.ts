@@ -1,4 +1,4 @@
-import { Feature, Pricing, Review } from "@/types";
+import { Blog, Feature, Pricing, Review } from "@/types";
 
 export const logos = [
   { imgSrc: "/images/logos/logo-01.png" },
@@ -150,5 +150,29 @@ export const reviewsContent: Review[] = [
     name: "John Anderson",
     job: "CEO, CupDev",
     imageUrl: "/images/people/person-06.jpg",
+  },
+];
+
+export const blogsContent: Blog[] = [
+  {
+    imageUrl: "/images/features/features-01.jpg",
+    type: "Business",
+    header: "Best Practices for Data Security in SaaS Applications",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  },
+  {
+    imageUrl: "/images/features/features-06.jpg",
+    type: "Business",
+    header: "The Ultimate Guide to choosing the Right SaaS Solution",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  },
+  {
+    imageUrl: "/images/features/features-02.jpg",
+    type: "Productivity",
+    header: "How AI is Changing the SaaS Landscape",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
   },
 ];
