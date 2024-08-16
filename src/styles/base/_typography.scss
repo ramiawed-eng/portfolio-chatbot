@@ -12,6 +12,20 @@
   }
 }
 
+.heading-secondary {
+  color: $color--primary;
+  font-size: 4.5rem;
+  font-weight: 700;
+
+  @include respond(tab-port) {
+    font-size: 3.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+
 .heading-third {
   color: $color--primary;
   font-size: 2rem;
@@ -20,7 +34,8 @@
 
 .paragraph-primary {
   color: $color--paragraph;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
 
   @include respond(tab-port) {
     font-size: 1.8rem;

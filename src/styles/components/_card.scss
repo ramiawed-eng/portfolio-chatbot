@@ -1,0 +1,24 @@
+.card {
+  background-color: $color--nav;
+  border: 1px solid $color--border-primary;
+  padding: 3rem;
+  border-radius: 1rem;
+  width: 30%;
+
+  @include respond(between-port-land) {
+    width: 47%;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
+  &.dark-border {
+    border: 2px solid $color--primary;
+  }
+
+  &.full-width {
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+}

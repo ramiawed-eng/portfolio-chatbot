@@ -1,4 +1,14 @@
 .section {
+  padding: 10rem 10rem;
+
+  @include respond(tab-port) {
+    padding: 5rem 5rem;
+  }
+
+  @include respond(phone) {
+    padding: 5rem 2rem;
+  }
+
   &-header {
     min-height: 100vh;
     display: flex;
@@ -18,7 +28,7 @@
 
     &-wrapper {
       transform: translateY(-50px);
-      width: 70%;
+      width: 60%;
       text-align: center;
 
       @include respond(tab-port) {
@@ -43,16 +53,6 @@
   }
 
   &-logos {
-    padding: 10rem 10rem;
-
-    @include respond(tab-port) {
-      padding: 5rem 5rem;
-    }
-
-    @include respond(tab-port) {
-      padding: 5rem 2rem;
-    }
-
     &-header {
       width: 70%;
       text-align: center;
@@ -79,6 +79,93 @@
         width: 120px;
         height: 50px;
         position: relative;
+      }
+    }
+  }
+
+  &-images-with-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &-features {
+    &-header {
+      width: 60%;
+      text-align: center;
+      margin: 5rem auto;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+
+  &-pricing {
+    &-header {
+      width: 60%;
+      text-align: center;
+      margin: 4rem auto;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+    }
+
+    &-switcher {
+      display: flex;
+      border: 1px solid $color--border-primary;
+      width: max-content;
+      border-radius: 0.6rem;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+      overflow: hidden;
+
+      & > div {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        color: $color--primary;
+        transition: all 0.1s linear;
+        cursor: pointer;
+      }
+
+      & > div.selected {
+        background-color: $color--primary;
+        color: $color--white;
+      }
+    }
+  }
+
+  &-reviews {
+    &-header {
+      width: 60%;
+      text-align: center;
+      margin: 4rem auto;
+    }
+
+    &-content {
+      // display: flex;
+      // flex-direction: row;
+      // flex-wrap: wrap;
+      // justify-content: center;
+      // gap: 3rem;
+      column-count: 3;
+      column-gap: 2rem;
+
+      @include respond(tab-port) {
+        column-count: 2;
+      }
+
+      @include respond(phone) {
+        column-count: 1;
       }
     }
   }

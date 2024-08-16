@@ -13,6 +13,13 @@
     }
   }
 
+  @if $size == between-port-land {
+    // 1100px 1100 / 16
+    @media (max-width: 68.75em) {
+      @content;
+    }
+  }
+
   @if $size == tab-land {
     // 1200px 1200 / 16
     @media (max-width: 75em) {
