@@ -1,0 +1,94 @@
+.auth-container {
+  border: 1px solid $color--border-primary;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin: 2rem;
+  width: 30%;
+  min-width: 350px;
+  background-image: linear-gradient(
+    to bottom,
+    $color--white,
+    $color--background-secondary 80%
+  );
+
+  @include respond(tab-port) {
+    width: 50%;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  &-header {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    & > h3 {
+      color: $color--primary;
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    & > p {
+      color: $color--paragraph;
+      font-size: 1.4rem;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    & > form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      & > button {
+        background-color: $color--button-primary;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        color: $color--white;
+        font-size: 1.6rem;
+        font-weight: 200;
+      }
+    }
+
+    &-link {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: $color--icon;
+      text-align: center;
+    }
+  }
+}
+
+.auth-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+
+  & > p {
+    font-size: 1.4rem;
+    color: $color--paragraph;
+
+    & > span {
+      display: iniline-block;
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    & > a {
+      text-decoration: underline;
+      font-weight: bold;
+      color: $color--icon;
+    }
+  }
+}

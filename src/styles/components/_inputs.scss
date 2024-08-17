@@ -1,0 +1,34 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  & > input[type] {
+    background-color: $color--nav;
+    border: 1px solid $color--border-primary;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: $color--paragraph;
+    letter-spacing: 0.1rem;
+
+    &::placeholder {
+      font-size: 1.4rem;
+      font-weight: 100;
+      color: $color--paragraph;
+    }
+
+    &:focus {
+      border: 1px solid $color--paragraph;
+      outline: none;
+    }
+  }
+
+  & > label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color--paragraph;
+  }
+}

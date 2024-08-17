@@ -15,7 +15,7 @@ export default function PricingSection() {
   };
 
   return (
-    <div className="section-pricing section">
+    <div className="section-pricing section" id="Pricing">
       <SectionHeader
         title="Pricing plan"
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."

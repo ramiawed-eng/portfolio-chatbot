@@ -5,7 +5,7 @@ import SectionHeader from "../typography/section-header";
 
 export default function FeaturesSection() {
   return (
-    <section className="section-features section">
+    <section className="section-features section" id="Features">
       <SectionHeader title="Get Better Result with Stunning Features" />
       {/* <div className="section-features-header">
         <HeadingSecondary title="Get Better Result with Stunning Features" />

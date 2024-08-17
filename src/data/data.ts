@@ -175,6 +175,20 @@ export const blogsContent: Blog[] = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
   },
+  {
+    imageUrl: "/images/features/features-07.jpg",
+    type: "Ideas",
+    header: "Howto Maximize the ROI of Your SaaS Investment",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  },
+  {
+    imageUrl: "/images/features/features-08.jpg",
+    type: "Business",
+    header: "Top 10 SaaS Trends to Watch in 2024",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+  },
 ];
 
 export const FrequentlyAskQuestion = [
