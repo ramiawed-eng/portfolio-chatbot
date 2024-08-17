@@ -52,6 +52,49 @@
     }
   }
 
+  &-notes {
+    // min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("/images/background-dot.png"),
+      linear-gradient(
+        0deg,
+        rgba($color--background-primary, 1),
+        rgba($color--white, 1)
+      );
+    perspective: 1000;
+    background-position: 0 0, 0 0;
+    background-size: 20px, auto;
+    position: relative;
+
+    &-wrapper {
+      transform: translateY(-50px);
+      width: 60%;
+      text-align: center;
+
+      @include respond(tab-port) {
+        transform: translateY(0);
+        width: 80%;
+      }
+
+      @include respond(phone) {
+        width: 90%;
+      }
+    }
+
+    &-links {
+      transform: translateY(-50px);
+      display: flex;
+      gap: 2rem;
+
+      @include respond(tab-port) {
+        transform: translateY(0);
+      }
+    }
+  }
+
   &-logos {
     &-header {
       width: 70%;
@@ -174,6 +217,80 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 3rem;
+    }
+  }
+
+  &-faq {
+    &-content {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+
+  &-footer {
+    &-top {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5rem;
+      padding: 8rem 0;
+      margin: 0 auto;
+      border-bottom: 1px solid $color--border-primary;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+
+        @include respond(phone) {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        &-link {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: $color--icon;
+        }
+      }
+
+      &-logos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    &-bottom {
+      padding: 3rem 0 10rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+
+      @include respond(phone) {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      &-link {
+        text-decoration: underline;
+        color: $color--icon;
+        font-size: 1.4rem;
+        font-weight: 300;
+      }
     }
   }
 }

@@ -1,7 +1,4 @@
 import { reviewsContent } from "@/data/data";
-import HeadingSecondary from "../typography/heading-secondary";
-import ParagraphPrimary from "../typography/paragraph-primary";
-import Card from "../cards/card";
 import ReviewCard from "../cards/review-card";
 import SectionHeader from "../typography/section-header";
 

@@ -176,3 +176,11 @@ export const blogsContent: Blog[] = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
   },
 ];
+
+export const FrequentlyAskQuestion = [
+  "How can your platform fenefit my business?",
+  "How secure is your platform?",
+  "Can I integrate your solution with other tooks we use?",
+  "Which language is supported?",
+  "How does your pricing model work?",
+];
