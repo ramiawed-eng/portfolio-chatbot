@@ -12,6 +12,7 @@ export type Feature = {
   icon: string;
   header: string;
   content: string;
+  id: string;
 };
 
 export type Pricing = {
