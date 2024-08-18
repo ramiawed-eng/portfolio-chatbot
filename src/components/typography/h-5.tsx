@@ -1,3 +1,9 @@
-export default function H5({ children }: { children: React.ReactNode }) {
-  return <h4 className="h-5-style header">{children}</h4>;
+export default function H5({
+  children,
+  cn,
+}: {
+  children: React.ReactNode;
+  cn?: string;
+}) {
+  return <h4 className={`${cn} h-5-style header`}>{children}</h4>;
 }
