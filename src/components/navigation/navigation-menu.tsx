@@ -68,11 +68,7 @@ export default function NavigationMenu() {
         >
           Pricing
         </Link>
-        <Link
-          href="/#Blogs"
-          className="navigation-link"
-          onClick={toggleShowMenu}
-        >
+        <Link href="/blog" className="navigation-link" onClick={toggleShowMenu}>
           Blogs
         </Link>
         <Link

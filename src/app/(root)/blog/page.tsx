@@ -6,8 +6,6 @@ export default function BlogPage() {
   return (
     <>
       <BlogsSection all={true} />
-      <NotesSection />
-      <FooterSection />
     </>
   );
 }

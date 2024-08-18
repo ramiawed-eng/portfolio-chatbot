@@ -1,10 +1,8 @@
 "use client";
-
-import { PricingContent } from "@/data/data";
-import HeadingSecondary from "../typography/heading-secondary";
-import ParagraphPrimary from "../typography/paragraph-primary";
-import PricingCard from "../cards/pricing-card";
 import { useState } from "react";
+import { PricingContent } from "@/data/data";
+
+import PricingCard from "../cards/pricing-card";
 import SectionHeader from "../typography/section-header";
 
 export default function PricingSection() {
@@ -20,10 +18,6 @@ export default function PricingSection() {
         title="Pricing plan"
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       />
-      {/* <div className="section-pricing-header">
-        <HeadingSecondary title="" />
-        <ParagraphPrimary text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
-      </div> */}
 
       <div className="section-pricing-switcher">
         <div className={`${monthly ? "selected" : ""}`} onClick={toggleMonthly}>

@@ -39,6 +39,9 @@
 
   &-info-wrapper {
     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
     & > p:first-child {
       color: $color--paragraph;
@@ -50,13 +53,6 @@
       color: $color--paragraph;
       font-size: 1.4rem;
       font-weight: 300;
-    }
-
-    & > h4 {
-      padding-block: 1.5rem;
-      color: $color--primary;
-      font-size: 2.3rem;
-      font-weight: 600;
     }
   }
 }

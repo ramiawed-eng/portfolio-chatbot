@@ -16,7 +16,7 @@ export default function Navigation() {
       <Link href="/#Pricing" className="navigation-link">
         Pricing
       </Link>
-      <Link href="/#Blogs" className="navigation-link">
+      <Link href="/blog" className="navigation-link">
         Blogs
       </Link>
       <Link href="/#ContactUs" className="navigation-link">

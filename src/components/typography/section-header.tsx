@@ -1,3 +1,7 @@
+import H1 from "./h-1";
+import H3 from "./h-3";
+import Paragraph from "./paragraph";
+
 export default function SectionHeader({
   title,
   subTitle,
@@ -7,8 +11,9 @@ export default function SectionHeader({
 }) {
   return (
     <div className="header-wrapper">
-      <h3>{title}</h3>
-      {subTitle && <p>{subTitle}</p>}
+      <H1>{title}</H1>
+      <div className="h-6"></div>
+      {subTitle && <Paragraph>{subTitle}</Paragraph>}
     </div>
   );
 }

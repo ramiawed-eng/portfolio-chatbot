@@ -31,6 +31,7 @@ export type Review = {
 };
 
 export type Blog = {
+  id: string;
   imageUrl: string;
   type: string;
   header: string;

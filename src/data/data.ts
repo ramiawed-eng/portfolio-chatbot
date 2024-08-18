@@ -155,6 +155,7 @@ export const reviewsContent: Review[] = [
 
 export const blogsContent: Blog[] = [
   {
+    id: "1",
     imageUrl: "/images/features/features-01.jpg",
     type: "Business",
     header: "Best Practices for Data Security in SaaS Applications",
@@ -162,6 +163,7 @@ export const blogsContent: Blog[] = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
   },
   {
+    id: "2",
     imageUrl: "/images/features/features-06.jpg",
     type: "Business",
     header: "The Ultimate Guide to choosing the Right SaaS Solution",
@@ -169,6 +171,7 @@ export const blogsContent: Blog[] = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
   },
   {
+    id: "3",
     imageUrl: "/images/features/features-02.jpg",
     type: "Productivity",
     header: "How AI is Changing the SaaS Landscape",
@@ -176,6 +179,7 @@ export const blogsContent: Blog[] = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
   },
   {
+    id: "4",
     imageUrl: "/images/features/features-07.jpg",
     type: "Ideas",
     header: "Howto Maximize the ROI of Your SaaS Investment",
@@ -183,6 +187,7 @@ export const blogsContent: Blog[] = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
   },
   {
+    id: "5",
     imageUrl: "/images/features/features-08.jpg",
     type: "Business",
     header: "Top 10 SaaS Trends to Watch in 2024",

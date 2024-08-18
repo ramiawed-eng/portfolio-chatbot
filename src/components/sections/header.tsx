@@ -1,21 +1,22 @@
 import { ButtonType, RowCardType } from "@/types";
 import RowCard from "../cards/row-card";
 import LinkAsButton from "../buttons/link-as-button";
-import HeadingPrimary from "../typography/heading-primary";
-import ParagraphPrimary from "../typography/paragraph-primary";
+import H1 from "../typography/h-1";
+import Paragraph from "../typography/paragraph";
 
 export default function HeaderSection() {
   return (
     <section className="section-header section">
       <div className="section-header-wrapper">
-        <HeadingPrimary title="Empower Your Business with Smart AI Chatbot One" />
+        <H1>Empower Your Business with Smart AI Chatbot One</H1>
 
         <div className="px-10 py-10 md:px-28">
-          <ParagraphPrimary
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
-          />
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat.
+          </Paragraph>
         </div>
       </div>
 

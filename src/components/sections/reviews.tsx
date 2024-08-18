@@ -9,10 +9,6 @@ export default function ReviewsSection() {
         title="You're in Good Company"
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       />
-      {/* <div className="section-reviews-header">
-        <HeadingSecondary title="You're in Good Company" />
-        <ParagraphPrimary text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
-      </div> */}
 
       <div className="section-reviews-content">
         {reviewsContent.map((review, index) => (

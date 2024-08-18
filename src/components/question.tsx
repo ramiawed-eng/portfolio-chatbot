@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import H6 from "./typography/h-6";
 
 export default function Question({ question }: { question: string }) {
   const [collapse, setCollapse] = useState(true);
@@ -9,7 +10,7 @@ export default function Question({ question }: { question: string }) {
   return (
     <div className="question-wrapper">
       <div className="question-header" onClick={() => setCollapse(!collapse)}>
-        <h4>{question}</h4>
+        <H6>{question}</H6>
         <div className={`${collapse ? "" : "rotate"} plus-icon`}>
           <Image
             src="/images/icons/icon-plus.png"

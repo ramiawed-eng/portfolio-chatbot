@@ -1,6 +1,6 @@
 import Image from "next/image";
-import HeadingPrimary from "../typography/heading-primary";
-import ParagraphPrimary from "../typography/paragraph-primary";
+import H4 from "../typography/h-4";
+import Paragraph from "../typography/paragraph";
 
 export default function ImageWithContent({
   header,
@@ -19,8 +19,8 @@ export default function ImageWithContent({
         className="image-with-content-header"
         style={{ order: imageLeft ? 2 : 1 }}
       >
-        <h4>{header}</h4>
-        <p>{content}</p>
+        <H4>{header}</H4>
+        <Paragraph>{content}</Paragraph>
       </div>
       <div
         className="image-with-content-image"

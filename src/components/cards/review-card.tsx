@@ -1,7 +1,8 @@
 import { Review } from "@/types";
 import Card from "./card";
-import ParagraphPrimary from "../typography/paragraph-primary";
 import Image from "next/image";
+import Paragraph from "../typography/paragraph";
+import H6 from "../typography/h-6";
 
 export default function ReviewCard({
   name,
@@ -13,7 +14,7 @@ export default function ReviewCard({
   return (
     <Card insideColumns={insideColumns}>
       <div className="review-card">
-        <ParagraphPrimary text={content} />
+        <Paragraph>{content}</Paragraph>
         <div className="review-card-info-wrapper">
           <Image
             src={`${imageUrl}`}
@@ -23,8 +24,8 @@ export default function ReviewCard({
             style={{ borderRadius: "50%" }}
           />
           <div className="review-card-person-info">
-            <h4>{name}</h4>
-            <p>{job}</p>
+            <H6>{name}</H6>
+            <Paragraph>{job}</Paragraph>
           </div>
         </div>
       </div>

@@ -1,12 +1,12 @@
 import { logos } from "@/data/data";
-import HeadingThird from "../typography/heading-third";
 import Image from "next/image";
+import H5 from "../typography/h-5";
 
 export default function LogoSection() {
   return (
     <section className="section-logos section">
       <div className="section-logos-header">
-        <HeadingThird title="Used by the world's most top companies" />
+        <H5>Used by the world's most top companies</H5>
       </div>
 
       <div className="section-logos-wrapper">

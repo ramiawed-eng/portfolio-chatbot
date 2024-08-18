@@ -1,5 +1,6 @@
 .header-wrapper {
   margin: 4rem auto;
+  text-align: center;
   width: 50%;
 
   @include respond(tab-port) {
@@ -8,20 +9,5 @@
 
   @include respond(tab-port) {
     width: 90%;
-  }
-
-  & > h3 {
-    color: $color--primary;
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    margin-block: 2rem;
-  }
-
-  & > p {
-    color: $color--paragraph;
-    font-size: 1.6rem;
-    font-weight: 300;
-    text-align: center;
   }
 }
