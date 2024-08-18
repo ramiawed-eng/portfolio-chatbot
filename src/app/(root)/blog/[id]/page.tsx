@@ -1,6 +1,7 @@
 "use client";
 
 import H2 from "@/components/typography/h-2";
+import H3 from "@/components/typography/h-3";
 import { blogsContent } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,7 +33,7 @@ export default function BlogDetails({
         <p>July 25, 2024</p>
 
         <div className="blog-details-content-details">
-          <h4>Introduction:</h4>
+          <H3 cn="pb-10">Introduction:</H3>
           <p>
             SaaS, or Software as a Service, has revolutionized the way
             businesses access and utilize software applications. With SaaS,

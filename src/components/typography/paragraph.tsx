@@ -1,3 +1,9 @@
-export default function Paragraph({ children }: { children: React.ReactNode }) {
-  return <p className="p-style">{children}</p>;
+export default function Paragraph({
+  children,
+  cn,
+}: {
+  children: React.ReactNode;
+  cn?: string;
+}) {
+  return <p className={`${cn} p-style`}>{children}</p>;
 }

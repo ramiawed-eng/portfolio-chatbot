@@ -1,3 +1,9 @@
-export default function H1({ children }: { children: React.ReactNode }) {
-  return <h1 className="h-1-style header">{children}</h1>;
+export default function H1({
+  children,
+  cn,
+}: {
+  children: React.ReactNode;
+  cn?: string;
+}) {
+  return <h1 className={`${cn} h-1-style header`}>{children}</h1>;
 }

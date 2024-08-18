@@ -3,11 +3,6 @@ import SectionHeader from "../typography/section-header";
 import BlogCard from "../cards/blog-card";
 import LinkAsButton from "../buttons/link-as-button";
 import { ButtonType } from "@/types";
-import H1 from "../typography/h-1";
-import H2 from "../typography/h-2";
-import H3 from "../typography/h-3";
-import Paragraph from "../typography/paragraph";
-import Quote from "../typography/quote";
 
 export default function BlogsSection({ all }: { all?: boolean }) {
   return (
