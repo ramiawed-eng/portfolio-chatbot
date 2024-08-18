@@ -37,3 +37,9 @@ export type Blog = {
   header: string;
   content: string;
 };
+
+export const enum IntersectionAmount {
+  ALL,
+  HALF,
+  QUARTER,
+}

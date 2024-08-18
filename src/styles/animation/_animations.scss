@@ -1,0 +1,78 @@
+.fade-in-from-bottom {
+  transform: translateY(10rem);
+  opacity: 0;
+
+  &.show {
+    animation-name: fade-in-from-bottom;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: scale(0);
+
+  &.show {
+    animation-name: fade-in-show;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes fade-in-from-bottom {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-show {
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.center-conatainer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.animation-timing-fast {
+  animation-duration: 0.1s;
+}
+
+.animation-timing-medium {
+  animation-duration: 0.2s;
+}
+
+.animation-timing-slow {
+  animation-duration: 0.3s;
+}
+
+.animation-delay-fast {
+  animation-delay: 0.1s;
+}
+
+.animation-delay-medium {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-slow {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-x-slow {
+  animation-delay: 0.4s;
+}
+
+.animation-delay-xx-slow {
+  animation-delay: 0.5s;
+}
+
+.animation-delay-xxx-slow {
+  animation-delay: 0.6s;
+}
